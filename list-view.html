@@ -1,0 +1,780 @@
+﻿<!DOCTYPE html>
+    <!--[if IE 9 ]><html class="ie9"><![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Notificaciones</title>
+        
+        <!-- Vendor CSS -->
+        <link href="vendors/bower_components/animate.css/animate.min.css" rel="stylesheet">
+        <link href="vendors/bower_components/bootstrap-sweetalert/lib/sweet-alert.css" rel="stylesheet">
+        <link href="vendors/bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.min.css" rel="stylesheet">
+        
+            
+        <!-- CSS -->
+        <link href="css/app.min.1.css" rel="stylesheet">
+        <link href="css/app.min.2.css" rel="stylesheet">
+    </head>
+    
+    <body>
+        <header id="header">
+            <ul class="header-inner">
+                <li id="menu-trigger" data-trigger="#sidebar">
+                    <div class="line-wrap">
+                        <div class="line top"></div>
+                        <div class="line center"></div>
+                        <div class="line bottom"></div>
+                    </div>
+                </li>
+            
+                <li class="logo hidden-xs">
+                    <a href="index.html">Notificaciones y actualizaciones recientes</a>
+                </li>
+                
+                <li class="pull-right">
+                <ul class="top-menu">
+                    <li id="toggle-width">
+                    </li>
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" class="tm-notification" href=""><i class="tmn-counts">9</i></a>
+                        <div class="dropdown-menu dropdown-menu-lg pull-right">
+                            <div class="listview" id="notifications">
+                                <div class="lv-header">
+                                    Notification
+                    
+                                    <ul class="actions">
+                                        <li class="dropdown">
+                                            <a href="" data-clear="notification">
+                                                <i class="zmdi zmdi-check-all"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="lv-body">
+                                    <a class="lv-item" href="">
+                                        <div class="media">
+                                            <div class="pull-left">
+                                                <img class="lv-img-sm" src="img/profile-pics/1.jpg" alt="">
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="lv-title">David Belle</div>
+                                                <small class="lv-small">Cum sociis natoque penatibus et magnis dis parturient montes</small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="lv-item" href="">
+                                        <div class="media">
+                                            <div class="pull-left">
+                                                <img class="lv-img-sm" src="img/profile-pics/2.jpg" alt="">
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="lv-title">Jonathan Morris</div>
+                                                <small class="lv-small">Nunc quis diam diamurabitur at dolor elementum, dictum turpis vel</small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="lv-item" href="">
+                                        <div class="media">
+                                            <div class="pull-left">
+                                                <img class="lv-img-sm" src="img/profile-pics/3.jpg" alt="">
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="lv-title">Fredric Mitchell Jr.</div>
+                                                <small class="lv-small">Phasellus a ante et est ornare accumsan at vel magnauis blandit turpis at augue ultricies</small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="lv-item" href="">
+                                        <div class="media">
+                                            <div class="pull-left">
+                                                <img class="lv-img-sm" src="img/profile-pics/4.jpg" alt="">
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="lv-title">Glenn Jecobs</div>
+                                                <small class="lv-small">Ut vitae lacus sem ellentesque maximus, nunc sit amet varius dignissim, dui est consectetur neque</small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="lv-item" href="">
+                                        <div class="media">
+                                            <div class="pull-left">
+                                                <img class="lv-img-sm" src="img/profile-pics/4.jpg" alt="">
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="lv-title">Bill Phillips</div>
+                                                <small class="lv-small">Proin laoreet commodo eros id faucibus. Donec ligula quam, imperdiet vel ante placerat</small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                    
+                                <a class="lv-footer" href="">View Previous</a>
+                            </div>
+                    
+                        </div>
+                    </li>
+                    
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" class="tm-settings" href=""></a>
+                        <ul class="dropdown-menu dm-icon pull-right">
+                            <li class="hidden-xs">
+                                <a href=""><i class="zmdi zmdi-face"></i> Cerrar seci&oacute;n</a>
+                            </li>
+                            <li>
+                                <a href=""><i class="zmdi zmdi-settings"></i> Configuraci&oacute;n</a>
+                            </li>
+                        </ul>
+                    </li>
+                </li>
+            </ul>
+            
+            <!-- Top Search Content -->
+            <div id="top-search-wrap">
+                <input type="text">
+                <i id="top-search-close">&times;</i>
+            </div>
+        </header>
+        
+        <section id="main">
+            <aside id="sidebar">
+                <div class="sidebar-inner c-overflow">
+                    <div class="profile-menu">
+                        <a href="">
+                            <div class="profile-pic">
+                                <img src="img/profile-pics/1.jpg" alt="">
+                            </div>
+
+                            <div class="profile-info">
+                                Malinda Hollaway
+
+                                <i class="zmdi zmdi-arrow-drop-down"></i>
+                            </div>
+                        </a>
+
+                        <ul class="main-menu">
+                            <li>
+                                <a href="profile-about.html"><i class="zmdi zmdi-account"></i> View Profile</a>
+                            </li>
+                            <li>
+                                <a href=""><i class="zmdi zmdi-input-antenna"></i> Privacy Settings</a>
+                            </li>
+                            <li>
+                                <a href=""><i class="zmdi zmdi-settings"></i> Settings</a>
+                            </li>
+                            <li>
+                                <a href=""><i class="zmdi zmdi-time-restore"></i> Logout</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="main-menu">
+                        <li><a href=""><i class="zmdi zmdi-home"></i> Inicio</a></li>
+                        <li class="sub-menu active toggled">
+                        </li>
+                        <li><a href=""><i class="zmdi zmdi-view-list"></i> Etapas</a></li>
+                        <li><a href="tlc.php"><i class="zmdi zmdi-collection-text"></i> Cotizaci&oacute;n</a></li>                      
+                        <li><a href=""><i class="zmdi zmdi-collection-item"></i> Contrato</a></li>
+                        <li><a href=""><i class="zmdi zmdi-face"></i> Cerrar sesi&oacute;n</a></li>
+                    </ul>
+
+                </div>
+            </aside>
+            
+            <aside id="chat">
+                <ul class="tab-nav tn-justified" role="tablist">
+                    <li role="presentation" class="active"><a href="#friends" aria-controls="friends" role="tab" data-toggle="tab">Friends</a></li>
+                    <li role="presentation"><a href="#online" aria-controls="online" role="tab" data-toggle="tab">Online Now</a></li>
+                </ul>
+            
+                <div class="chat-search">
+                    <div class="fg-line">
+                        <input type="text" class="form-control" placeholder="Search People">
+                    </div>
+                </div>
+            
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane fade in active" id="friends">
+                        <div class="listview">
+                            <a class="lv-item" href="">
+                                <div class="media">
+                                    <div class="pull-left p-relative">
+                                        <img class="lv-img-sm" src="img/profile-pics/2.jpg" alt="">
+                                        <i class="chat-status-busy"></i>
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="lv-title">Jonathan Morris</div>
+                                        <small class="lv-small">Available</small>
+                                    </div>
+                                </div>
+                            </a>
+            
+                            <a class="lv-item" href="">
+                                <div class="media">
+                                    <div class="pull-left">
+                                        <img class="lv-img-sm" src="img/profile-pics/1.jpg" alt="">
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="lv-title">David Belle</div>
+                                        <small class="lv-small">Last seen 3 hours ago</small>
+                                    </div>
+                                </div>
+                            </a>
+            
+                            <a class="lv-item" href="">
+                                <div class="media">
+                                    <div class="pull-left p-relative">
+                                        <img class="lv-img-sm" src="img/profile-pics/3.jpg" alt="">
+                                        <i class="chat-status-online"></i>
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="lv-title">Fredric Mitchell Jr.</div>
+                                        <small class="lv-small">Availble</small>
+                                    </div>
+                                </div>
+                            </a>
+            
+                            <a class="lv-item" href="">
+                                <div class="media">
+                                    <div class="pull-left p-relative">
+                                        <img class="lv-img-sm" src="img/profile-pics/4.jpg" alt="">
+                                        <i class="chat-status-online"></i>
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="lv-title">Glenn Jecobs</div>
+                                        <small class="lv-small">Availble</small>
+                                    </div>
+                                </div>
+                            </a>
+            
+                            <a class="lv-item" href="">
+                                <div class="media">
+                                    <div class="pull-left">
+                                        <img class="lv-img-sm" src="img/profile-pics/5.jpg" alt="">
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="lv-title">Bill Phillips</div>
+                                        <small class="lv-small">Last seen 3 days ago</small>
+                                    </div>
+                                </div>
+                            </a>
+            
+                            <a class="lv-item" href="">
+                                <div class="media">
+                                    <div class="pull-left">
+                                        <img class="lv-img-sm" src="img/profile-pics/6.jpg" alt="">
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="lv-title">Wendy Mitchell</div>
+                                        <small class="lv-small">Last seen 2 minutes ago</small>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="lv-item" href="">
+                                <div class="media">
+                                    <div class="pull-left p-relative">
+                                        <img class="lv-img-sm" src="img/profile-pics/7.jpg" alt="">
+                                        <i class="chat-status-busy"></i>
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="lv-title">Teena Bell Ann</div>
+                                        <small class="lv-small">Busy</small>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="online">
+                        <div class="listview">
+                            <a class="lv-item" href="">
+                                <div class="media">
+                                    <div class="pull-left p-relative">
+                                        <img class="lv-img-sm" src="img/profile-pics/2.jpg" alt="">
+                                        <i class="chat-status-busy"></i>
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="lv-title">Jonathan Morris</div>
+                                        <small class="lv-small">Available</small>
+                                    </div>
+                                </div>
+                            </a>
+            
+                            <a class="lv-item" href="">
+                                <div class="media">
+                                    <div class="pull-left p-relative">
+                                        <img class="lv-img-sm" src="img/profile-pics/3.jpg" alt="">
+                                        <i class="chat-status-online"></i>
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="lv-title">Fredric Mitchell Jr.</div>
+                                        <small class="lv-small">Availble</small>
+                                    </div>
+                                </div>
+                            </a>
+            
+                            <a class="lv-item" href="">
+                                <div class="media">
+                                    <div class="pull-left p-relative">
+                                        <img class="lv-img-sm" src="img/profile-pics/4.jpg" alt="">
+                                        <i class="chat-status-online"></i>
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="lv-title">Glenn Jecobs</div>
+                                        <small class="lv-small">Availble</small>
+                                    </div>
+                                </div>
+                            </a>
+            
+                            <a class="lv-item" href="">
+                                <div class="media">
+                                    <div class="pull-left p-relative">
+                                        <img class="lv-img-sm" src="img/profile-pics/7.jpg" alt="">
+                                        <i class="chat-status-busy"></i>
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="lv-title">Teena Bell Ann</div>
+                                        <small class="lv-small">Busy</small>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        
+            <section id="content">
+                <div class="container">
+                    <div class="block-header">
+                        
+                    </div>
+                
+                    <div class="card">
+                        <div class="listview lv-bordered lv-lg">
+                            <div class="lv-header-alt clearfix">
+                                <h2 class="lvh-label hidden-xs">Notificaciones y actualizaciones recientes</h2>
+                                
+                                <div class="lvh-search">
+                                    <input type="text" placeholder="Start typing..." class="lvhs-input">
+                
+                                    <i class="lvh-search-close">&times;</i>
+                                </div>
+                                
+                                <ul class="lv-actions actions">
+                                    <li>
+                                        <a href="" class="lvh-search-trigger">
+                                            
+                                        </a>
+                                    </li>
+                    
+                                    <li>
+                                        <a href="">
+                                        </a>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="" data-toggle="dropdown" aria-expanded="true">
+                                            
+                                        </a>
+                            
+                                        <ul class="dropdown-menu dropdown-menu-right">
+                                            <li>
+                                                <a href="">Last Modified</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Last Edited</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Name</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Date</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="zmdi zmdi-info"></i>
+                                        </a>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="" data-toggle="dropdown" aria-expanded="true">
+                                            <i class="zmdi zmdi-more-vert"></i>
+                                        </a>
+                            
+                                        <ul class="dropdown-menu dropdown-menu-right">
+                                            <li>
+                                                <a href="">Refresh</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Listview Settings</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="lv-body">
+                                <div class="lv-item media">
+                                    
+                                    <div class="media-body">
+                                        <div class="lv-title">Se corrigió un error que provocaba que el motor de búsqueda se quedara trabado</div>
+                                        
+                                        <div class="lv-actions actions dropdown">
+                                            <a href="" data-toggle="dropdown" aria-expanded="true">
+                                                <i class="zmdi zmdi-more-vert"></i>
+                                            </a>
+                                
+                                            <ul class="dropdown-menu dropdown-menu-right">
+                                                <li>
+                                                    <a href="">Edit</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Delete</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="lv-item media">
+                                    
+                                    <div class="media-body">
+                                        <div class="lv-title">Se aumentó el tamaño de la fuente para que sea más legible</div>
+                                        <small class="lv-small">Se recibieron sugerencias de una fuente de mayor tamaños</small>
+                                    
+                                        <div class="lv-actions actions dropdown">
+                                            <a href="" data-toggle="dropdown" aria-expanded="true">
+                                                <i class="zmdi zmdi-more-vert"></i>
+                                            </a>
+                                
+                                            <ul class="dropdown-menu dropdown-menu-right">
+                                                <li>
+                                                    <a href="">Edit</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Delete</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="lv-item media">
+                                    
+                                    <div class="media-body">
+                                        <div class="lv-title">Se modificó el tamaño del logo para que no tapara las letras del fondo</div>
+                                        <ul class="lv-attrs">
+                                        </ul>
+                                        
+                                        <div class="lv-actions actions dropdown">
+                                            <a href="" data-toggle="dropdown" aria-expanded="true">
+                                                <i class="zmdi zmdi-more-vert"></i>
+                                            </a>
+                                
+                                            <ul class="dropdown-menu dropdown-menu-right">
+                                                <li>
+                                                    <a href="">Edit</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Delete</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="lv-item media">
+                                    
+                                    <div class="media-body">
+                                        <div class="lv-title">Se corrigió la propiedad del tamaño del formulario para que se ajuste al tamaño de la ventana</div>
+                                        <small class="lv-small">Se observó que el texto y los elementos necesitaban ajustar su tamaño al de la pantalla</small>
+                                        
+                                        <ul class="lv-attrs">
+                                        </ul>
+                                       
+                                        <div class="lv-actions actions dropdown">
+                                            <a href="" data-toggle="dropdown" aria-expanded="true">
+                                                <i class="zmdi zmdi-more-vert"></i>
+                                            </a>
+                                
+                                            <ul class="dropdown-menu dropdown-menu-right">
+                                                <li>
+                                                    <a href="">Edit</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Delete</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="lv-item media">
+                                    
+                                
+                                    <div class="media-body">
+                                        <div class="lv-title">Se aregló un error que ocasionaba que al cerrar una ventana de diálogo, se cerrara todo el programa</div>
+                                        <small class="lv-small">El usuario ya no está obligado a dar click en el boton continuar, atras o cerrar, también puede cerrar la ventana emergente sin cerrar el programa</small>
+                                        
+                                        <div class="lv-actions actions dropdown">
+                                            <a href="" data-toggle="dropdown" aria-expanded="true">
+                                                <i class="zmdi zmdi-more-vert"></i>
+                                            </a>
+                                
+                                            <ul class="dropdown-menu dropdown-menu-right">
+                                                <li>
+                                                    <a href="">Edit</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Delete</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="lv-item media">
+                                    
+                                   
+                                    <div class="media-body">
+                                        <div class="lv-title">Se generó otra versión alternativa que muestra una interfaz orientada a menos detalles, almenos que se soliciten</div>
+                                        <small class="lv-small">La idea surgió para mostrar una versión que fuera más rápida de cargar</small>
+                                        
+                                        <ul class="lv-attrs">
+                                        </ul>
+                                        
+                                        <div class="lv-actions actions dropdown">
+                                            <a href="" data-toggle="dropdown" aria-expanded="true">
+                                                <i class="zmdi zmdi-more-vert"></i>
+                                            </a>
+                                
+                                            <ul class="dropdown-menu dropdown-menu-right">
+                                                <li>
+                                                    <a href="">Edit</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Delete</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="lv-item media">
+                                    
+                                    <div class="media-body">
+                                        <div class="lv-title">Ahora la aplicación es más rápida, pues se libera más memoria después de las consultas</div>
+                                        
+                                        <ul class="lv-attrs">
+                                        </ul>
+                                        
+                                        <div class="lv-actions actions dropdown">
+                                            <a href="" data-toggle="dropdown" aria-expanded="true">
+                                                <i class="zmdi zmdi-more-vert"></i>
+                                            </a>
+                                
+                                            <ul class="dropdown-menu dropdown-menu-right">
+                                                <li>
+                                                    <a href="">Edit</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Delete</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="lv-item media">
+                                    
+                                    <div class="media-body">
+                                        <div class="lv-title">Se arregló un error que se detonaba al realizar búsquedas por fecha</div>
+                                        <small class="lv-small">Al seleccionar la primer fecha disponible, el programa marcaba un error</small>
+                                        
+                                        <div class="lv-actions actions dropdown">
+                                            <a href="" data-toggle="dropdown" aria-expanded="true">
+                                                <i class="zmdi zmdi-more-vert"></i>
+                                            </a>
+                                
+                                            <ul class="dropdown-menu dropdown-menu-right">
+                                                <li>
+                                                    <a href="">Edit</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Delete</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="lv-item media">
+                                    
+                                    <div class="media-body">
+                                        <div class="lv-title">Se optimizó el algoritmo para realizar consultas en la base de datos</div>
+                                        <small class="lv-small">Ahora el programa puede tardar menos de la mitad de tiempo en realizar consultas</small>
+                                    
+                                        <div class="lv-actions actions dropdown">
+                                            <a href="" data-toggle="dropdown" aria-expanded="true">
+                                                <i class="zmdi zmdi-more-vert"></i>
+                                            </a>
+                                
+                                            <ul class="dropdown-menu dropdown-menu-right">
+                                                <li>
+                                                    <a href="">Edit</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Delete</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="lv-item media">
+                                    
+                                    <div class="media-body">
+                                        <div class="lv-title">Se corrigió un error que hacía que aveces el botón de aceptar apareciera movido hacia la izquierda</div>
+                                        <ul class="lv-attrs">
+                                        </ul>
+                                        
+                                        <div class="lv-actions actions dropdown">
+                                            <a href="" data-toggle="dropdown" aria-expanded="true">
+                                                <i class="zmdi zmdi-more-vert"></i>
+                                            </a>
+                                
+                                            <ul class="dropdown-menu dropdown-menu-right">
+                                                <li>
+                                                    <a href="">Edit</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Delete</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="lv-item media">
+                                   
+                                    <div class="media-body">
+                                        <div class="lv-title">Se arregló un error que ocasionaba que el evento de mouse over sobre algunos elementos los mostrara donde no dejaban leer la descripción</div>
+                                        <small class="lv-small">Las descripciones se movían repetidamente sin parar</small>
+                                        
+                                        <ul class="lv-attrs">
+                                        </ul>
+                                       
+                                        <div class="lv-actions actions dropdown">
+                                            <a href="" data-toggle="dropdown" aria-expanded="true">
+                                                <i class="zmdi zmdi-more-vert"></i>
+                                            </a>
+                                
+                                            <ul class="dropdown-menu dropdown-menu-right">
+                                                <li>
+                                                    <a href="">Edit</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Delete</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <ul class="pagination lv-pagination">
+                            <li>
+                                <a href="" aria-label="Previous">
+                                    <i class="zmdi zmdi-chevron-left"></i>
+                                </a>
+                            </li>
+                            <li class="active"><a href="">1</a></li>
+                            <li><a href="">2</a></li>
+                            <li><a href="">3</a></li>
+                            <li><a href="">4</a></li>
+                            <li><a href="">5</a></li>
+                            <li>
+                                <a href="" aria-label="Next">
+                                    <i class="zmdi zmdi-chevron-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </section>
+        
+        <footer id="footer">
+            Copyright &copy; 2016 Hackers Hunters
+            
+            <ul class="f-menu">
+                <li><a href="">Home</a></li>
+                <li><a href="">Dashboard</a></li>
+                <li><a href="">Reports</a></li>
+                <li><a href="">Support</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </footer>
+        
+        <!-- Older IE warning message -->
+        <!--[if lt IE 9]>
+            <div class="ie-warning">
+                <h1 class="c-white">Warning!!</h1>
+                <p>You are using an outdated version of Internet Explorer, please upgrade <br/>to any of the following web browsers to access this website.</p>
+                <div class="iew-container">
+                    <ul clss="iew-download">
+                        <li>
+                            <a href="http://www.google.com/chrome/">
+                                <img src="img/browsers/chrome.png" alt="">
+                                <div>Chrome</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.mozilla.org/en-US/firefox/new/">
+                                <img src="img/browsers/firefox.png" alt="">
+                                <div>Firefox</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.opera.com">
+                                <img src="img/browsers/opera.png" alt="">
+                                <div>Opera</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.apple.com/safari/">
+                                <img src="img/browsers/safari.png" alt="">
+                                <div>Safari</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
+                                <img src="img/browsers/ie.png" alt="">
+                                <div>IE (New)</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <p>Sorry for the inconvenience!</p>
+            </div>   
+        <![endif]-->
+        
+        <!-- Javascript Libraries -->
+        <script src="vendors/bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        
+        <script src="vendors/bower_components/jquery.nicescroll/jquery.nicescroll.min.js"></script>
+        <script src="vendors/bower_components/Waves/dist/waves.min.js"></script>
+        <script src="vendors/bootstrap-growl/bootstrap-growl.min.js"></script>
+        <script src="vendors/bower_components/bootstrap-sweetalert/lib/sweet-alert.min.js"></script>
+        
+        <!-- Placeholder for IE9 -->
+        <!--[if IE 9 ]>
+            <script src="vendors/bower_components/jquery-placeholder/jquery.placeholder.min.js"></script>
+        <![endif]-->
+        
+        <script src="js/functions.js"></script>
+        <script src="js/demo.js"></script>
+    
+    
+    </body>
+</html>

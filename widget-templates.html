@@ -1,0 +1,684 @@
+
+<!DOCTYPE html>
+<!--[if IE 9 ]><html class="ie9"><![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Retos</title>
+
+        <!-- Vendor CSS -->
+        <link href="vendors/bower_components/animate.css/animate.min.css" rel="stylesheet">
+        <link href="vendors/bower_components/bootstrap-sweetalert/lib/sweet-alert.css" rel="stylesheet">
+        <link href="vendors/bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.min.css" rel="stylesheet">
+        
+            
+        <!-- CSS -->
+        <link href="css/app.min.1.css" rel="stylesheet">
+        <link href="css/app.min.2.css" rel="stylesheet">
+        
+        
+    </head>
+    <body>
+        <header id="header">
+            <ul class="header-inner">
+                <li id="menu-trigger" data-trigger="#sidebar">
+                    <div class="line-wrap">
+                        <div class="line top"></div>
+                        <div class="line center"></div>
+                        <div class="line bottom"></div>
+                    </div>
+                </li>
+            
+                <li class="logo hidden-xs">
+                    <a href="index.html">Bandeja de retos</a>
+                </li>
+                
+                <li class="pull-right">
+                <ul class="top-menu">
+                    <li id="toggle-width">
+                    </li>
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" class="tm-notification" href=""><i class="tmn-counts">9</i></a>
+                        <div class="dropdown-menu dropdown-menu-lg pull-right">
+                            <div class="listview" id="notifications">
+                                <div class="lv-header">
+                                    Notification
+                    
+                                    <ul class="actions">
+                                        <li class="dropdown">
+                                            <a href="" data-clear="notification">
+                                                <i class="zmdi zmdi-check-all"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="lv-body">
+                                    <a class="lv-item" href="">
+                                        <div class="media">
+                                            <div class="pull-left">
+                                                <img class="lv-img-sm" src="img/profile-pics/1.jpg" alt="">
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="lv-title">David Belle</div>
+                                                <small class="lv-small">Cum sociis natoque penatibus et magnis dis parturient montes</small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="lv-item" href="">
+                                        <div class="media">
+                                            <div class="pull-left">
+                                                <img class="lv-img-sm" src="img/profile-pics/2.jpg" alt="">
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="lv-title">Jonathan Morris</div>
+                                                <small class="lv-small">Nunc quis diam diamurabitur at dolor elementum, dictum turpis vel</small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="lv-item" href="">
+                                        <div class="media">
+                                            <div class="pull-left">
+                                                <img class="lv-img-sm" src="img/profile-pics/3.jpg" alt="">
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="lv-title">Fredric Mitchell Jr.</div>
+                                                <small class="lv-small">Phasellus a ante et est ornare accumsan at vel magnauis blandit turpis at augue ultricies</small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="lv-item" href="">
+                                        <div class="media">
+                                            <div class="pull-left">
+                                                <img class="lv-img-sm" src="img/profile-pics/4.jpg" alt="">
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="lv-title">Glenn Jecobs</div>
+                                                <small class="lv-small">Ut vitae lacus sem ellentesque maximus, nunc sit amet varius dignissim, dui est consectetur neque</small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="lv-item" href="">
+                                        <div class="media">
+                                            <div class="pull-left">
+                                                <img class="lv-img-sm" src="img/profile-pics/4.jpg" alt="">
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="lv-title">Bill Phillips</div>
+                                                <small class="lv-small">Proin laoreet commodo eros id faucibus. Donec ligula quam, imperdiet vel ante placerat</small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                    
+                                <a class="lv-footer" href="">View Previous</a>
+                            </div>
+                    
+                        </div>
+                    </li>
+                    
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" class="tm-settings" href=""></a>
+                        <ul class="dropdown-menu dm-icon pull-right">
+                            <li class="hidden-xs">
+                                <a href=""><i class="zmdi zmdi-face"></i> Cerrar seci&oacute;n</a>
+                            </li>
+                            <li>
+                                <a href=""><i class="zmdi zmdi-settings"></i> Configuraci&oacute;n</a>
+                            </li>
+                        </ul>
+                    </li>
+                </li>
+            </ul>
+            
+            <!-- Top Search Content -->
+            <div id="top-search-wrap">
+                <input type="text">
+                <i id="top-search-close">&times;</i>
+            </div>
+        </header>
+        
+        <section id="main">
+            <aside id="sidebar">
+                <div class="sidebar-inner c-overflow">
+                    <div class="profile-menu">
+                        <a href="">
+                            <div class="profile-pic">
+                                <img src="img/profile-pics/1.jpg" alt="">
+                            </div>
+
+                            <div class="profile-info">
+                                Malinda Hollaway
+
+                                <i class="zmdi zmdi-arrow-drop-down"></i>
+                            </div>
+                        </a>
+
+                        <ul class="main-menu">
+                            <li>
+                                <a href=""><i class="zmdi zmdi-settings"></i> Configuraciones</a>
+                            </li>
+                            <li>
+                                <a href=""><i class="zmdi zmdi-face"></i> Cerrar sesi&oacute;n</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <ul class="main-menu">
+                        <li><a href=""><i class="zmdi zmdi-home"></i> Inicio</a></li>
+                        <li class="sub-menu active toggled">
+                        </li>
+                        <li><a href=""><i class="zmdi zmdi-view-list"></i> Etapas</a></li>
+                        <li><a href="tlc.php"><i class="zmdi zmdi-collection-text"></i> Cotizaci&oacute;n</a></li>                      
+                        <li><a href=""><i class="zmdi zmdi-collection-item"></i> Contrato</a></li>
+                        <li><a href=""><i class="zmdi zmdi-face"></i> Cerrar sesi&oacute;n</a></li>
+                    </ul>
+                </div>
+            </aside>
+            
+            <aside id="chat">
+                <ul class="tab-nav tn-justified" role="tablist">
+                    <li role="presentation" class="active"><a href="#friends" aria-controls="friends" role="tab" data-toggle="tab">Friends</a></li>
+                    <li role="presentation"><a href="#online" aria-controls="online" role="tab" data-toggle="tab">Online Now</a></li>
+                </ul>
+                
+                <div class="chat-search">
+                    <div class="fg-line">
+                        <input type="text" class="form-control" placeholder="Search People">
+                    </div>
+                </div>
+                
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane fade in active" id="friends">
+                        <div class="listview">
+                            <a class="lv-item" href="">
+                                <div class="media">
+                                    <div class="pull-left p-relative">
+                                        <img class="lv-img-sm" src="img/profile-pics/2.jpg" alt="">
+                                        <i class="chat-status-busy"></i>
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="lv-title">Jonathan Morris</div>
+                                        <small class="lv-small">Available</small>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                            <a class="lv-item" href="">
+                                <div class="media">
+                                    <div class="pull-left">
+                                        <img class="lv-img-sm" src="img/profile-pics/1.jpg" alt="">
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="lv-title">David Belle</div>
+                                        <small class="lv-small">Last seen 3 hours ago</small>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                            <a class="lv-item" href="">
+                                <div class="media">
+                                    <div class="pull-left p-relative">
+                                        <img class="lv-img-sm" src="img/profile-pics/3.jpg" alt="">
+                                        <i class="chat-status-online"></i>
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="lv-title">Fredric Mitchell Jr.</div>
+                                        <small class="lv-small">Availble</small>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                            <a class="lv-item" href="">
+                                <div class="media">
+                                    <div class="pull-left p-relative">
+                                        <img class="lv-img-sm" src="img/profile-pics/4.jpg" alt="">
+                                        <i class="chat-status-online"></i>
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="lv-title">Glenn Jecobs</div>
+                                        <small class="lv-small">Availble</small>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                            <a class="lv-item" href="">
+                                <div class="media">
+                                    <div class="pull-left">
+                                        <img class="lv-img-sm" src="img/profile-pics/5.jpg" alt="">
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="lv-title">Bill Phillips</div>
+                                        <small class="lv-small">Last seen 3 days ago</small>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                            <a class="lv-item" href="">
+                                <div class="media">
+                                    <div class="pull-left">
+                                        <img class="lv-img-sm" src="img/profile-pics/6.jpg" alt="">
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="lv-title">Wendy Mitchell</div>
+                                        <small class="lv-small">Last seen 2 minutes ago</small>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="lv-item" href="">
+                                <div class="media">
+                                    <div class="pull-left p-relative">
+                                        <img class="lv-img-sm" src="img/profile-pics/7.jpg" alt="">
+                                        <i class="chat-status-busy"></i>
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="lv-title">Teena Bell Ann</div>
+                                        <small class="lv-small">Busy</small>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="online">
+                        <div class="listview">
+                            <a class="lv-item" href="">
+                                <div class="media">
+                                    <div class="pull-left p-relative">
+                                        <img class="lv-img-sm" src="img/profile-pics/2.jpg" alt="">
+                                        <i class="chat-status-busy"></i>
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="lv-title">Jonathan Morris</div>
+                                        <small class="lv-small">Disponible</small>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                            <a class="lv-item" href="">
+                                <div class="media">
+                                    <div class="pull-left p-relative">
+                                        <img class="lv-img-sm" src="img/profile-pics/3.jpg" alt="">
+                                        <i class="chat-status-online"></i>
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="lv-title">Fredric Mitchell Jr.</div>
+                                        <small class="lv-small">Disponible</small>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                            <a class="lv-item" href="">
+                                <div class="media">
+                                    <div class="pull-left p-relative">
+                                        <img class="lv-img-sm" src="img/profile-pics/4.jpg" alt="">
+                                        <i class="chat-status-online"></i>
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="lv-title">Glenn Jecobs</div>
+                                        <small class="lv-small">Disponible</small>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a class="lv-item" href="">
+                                <div class="media">
+                                    <div class="pull-left p-relative">
+                                        <img class="lv-img-sm" src="img/profile-pics/7.jpg" alt="">
+                                        <i class="chat-status-busy"></i>
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="lv-title">Teena Bell Ann</div>
+                                        <small class="lv-small">Busy</small>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            
+            
+            <section id="content">
+                <div class="container">
+                
+        
+        <div class="row">
+            <div class="col-sm-4">
+                            <div class="card">
+                                <div class="card-header bgm-brown m-b-20">
+                                    <h2>Sueldo de profesor<small>propuesto por <a>Sam</a></small></h2>
+                                    <ul class="actions actions-alt">
+                                        <li class="dropdown">
+                                            <a href="" data-toggle="dropdown">
+                                                <i class="zmdi zmdi-more-vert"></i>
+                                            </a>
+                                            
+                                            <ul class="dropdown-menu dropdown-menu-right">
+                                                <li>
+                                                    <a href="">Cambiar fecha limite</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Cambiar descripci&oacute;n</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Eliminar reto</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    
+                                    <button title="ir al sitio del reto" class="btn bgm-gray btn-float waves-effect"><i class="zmdi zmdi-mail-send"></i></button>
+                                </div>
+
+                                <div class="card-body card-padding">
+                                    Dise&ntilde;ar un programa en Lenguaje C++ para determinar la cantidad de dinero que recibir&aacute; un profesor por concepto de las horas extras trabajadas en un colegio...    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="card">
+                                <div class="card-header bgm-orange m-b-20">
+                                    <h2>M&eacute;todo de los cuadrados. (con recursividad en cualquier lenguaje)<small>propuesto por <a>Antonio Medina</a></small></h2>
+                                    <ul class="actions actions-alt">
+                                        <li class="dropdown">
+                                            <a href="" data-toggle="dropdown">
+                                                <i class="zmdi zmdi-more-vert"></i>
+                                            </a>
+                                            
+                                            <ul class="dropdown-menu dropdown-menu-right">
+                                                <li>
+                                                    <a href="">Cambiar fecha limite</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Cambiar descripci&oacute;n</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Eliminar reto</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    
+                                    <button title="ir al sitio del reto" class="btn bgm-green btn-float waves-effect"><i class="zmdi zmdi-mail-send"></i></button>
+                                </div>
+
+                                <div class="card-body card-padding">
+                                    Consiste en que cada n&uacute;mero de una sucesi&oacute;n es producido tomando los d&iacute;gitos medios de un n&uacute;mero obtenido mediante la elevaci&oacute;n al cuadrado...
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <div class="card">
+                                <div class="card-header bgm-bluegray m-b-20">
+                                    <h2>Obtener todas las sumas con n&uacute;meros anteriores a uno dado<small>propuesto por <a>Mark</a></small></h2>
+                                    <ul class="actions actions-alt">
+                                        <li class="dropdown">
+                                            <a href="" data-toggle="dropdown">
+                                                <i class="zmdi zmdi-more-vert"></i>
+                                            </a>
+                                            
+                                            <ul class="dropdown-menu dropdown-menu-right">
+                                                <li>
+                                                    <a href="">Cambiar fecha limite</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Cambiar descripci&oacute;n</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Eliminar reto</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    
+                                    <button title="ir al sitio del reto" class="btn bgm-blue btn-float waves-effect"><i class="zmdi zmdi-mail-send"></i></button>
+                                </div>
+
+                                <div class="card-body card-padding">
+                                    Dado un n&uacute;mero n y numero de sumandos = m, sacar todas las sumas con n&uacute;meros enteros no negativos (es decir, los n&uacute;meros naturales y el 0) anteriores a &eacute;l que dan como resultado n pero sin repetir)...
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="card">
+                                <div class="card-header bgm-blue m-b-20">
+                                    <h2>Juego del Go: Reglas<small>propuesto por <a>JCarles</a></small></h2>
+                                    <ul class="actions actions-alt">
+                                        <li class="dropdown">
+                                            <a href="" data-toggle="dropdown">
+                                                <i class="zmdi zmdi-more-vert"></i>
+                                            </a>
+                                            
+                                            <ul class="dropdown-menu dropdown-menu-right">
+                                                <li>
+                                                    <a href="">Cambiar fecha limite</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Cambiar descripci&oacute;n</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Eliminar reto</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    
+                                    <button title="ir al sitio del reto" class="btn bgm-green btn-float waves-effect"><i class="zmdi zmdi-mail-send"></i></button>
+                                </div>
+
+                                <div class="card-body card-padding">
+                                    Esta semana AlphaGo, un programa desarrollado por Google DeepMind, ha ganado 4 juegos a 1 contra un jugador profesional 9 dan, Lee Sedol...
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="card">
+                                <div class="card-header bgm-cyan m-b-20">
+                                    <h2>Camino mas corto: Algoritmo de Dijkstra<small>propuesto por <a>Jorge</a></small></h2>
+                                    <ul class="actions actions-alt">
+                                        <li class="dropdown">
+                                            <a href="" data-toggle="dropdown">
+                                                <i class="zmdi zmdi-more-vert"></i>
+                                            </a>
+                                            
+                                            <ul class="dropdown-menu dropdown-menu-right">
+                                                <li>
+                                                    <a href="">Cambiar fecha limite</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Cambiar descripci&oacute;n</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Eliminar reto</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    
+                                    <button title="ir al sitio del reto" class="btn bgm-black btn-float waves-effect"><i class="zmdi zmdi-mail-send"></i></button>
+                                </div>
+
+                                <div class="card-body card-padding">
+                                    El algoritmo de dijkstra determina la ruta m&aacute;s corta desde un nodo origen hacia los dem&aacute;s nodos para ello es requerido como entrada un grafo cuyas aristas posean pesos...
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="card">
+                                <div class="card-header bgm-yellow m-b-20">
+                                    <h2>Crear funcion de b&uacute;squeda, prefereriblemente en Python<small>propuesto por <a>Villar Vega</a></small></h2>
+                                    <ul class="actions actions-alt">
+                                        <li class="dropdown">
+                                            <a href="" data-toggle="dropdown">
+                                                <i class="zmdi zmdi-more-vert"></i>
+                                            </a>
+                                            
+                                            <ul class="dropdown-menu dropdown-menu-right">
+                                                <li>
+                                                    <a href="">Cambiar fecha limite</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Cambiar descripci&oacute;n</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Eliminar reto</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    
+                                    <button title="ir al sitio del reto" class="btn bgm-blue btn-float waves-effect"><i class="zmdi zmdi-mail-send"></i></button>
+                                </div>
+
+                                <div class="card-body card-padding">
+                                    Haz una funci&oacute;n que devuelva una tabla con todas las posiciones donde encuentre una cadena. La funci&oacute;n recibe dos cadenas, una con la cadena que se busca y la otra la cadena donde se busca...
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="card">
+                                <div class="card-header bgm-purple m-b-20">
+                                    <h2>Registro de choferes<small>propuesto por <a>Luis TC</a></small></h2>
+                                    <ul class="actions actions-alt">
+                                        <li class="dropdown">
+                                            <a href="" data-toggle="dropdown">
+                                                <i class="zmdi zmdi-more-vert"></i>
+                                            </a>
+                                            
+                                            <ul class="dropdown-menu dropdown-menu-right">
+                                                <li>
+                                                    <a href="">Cambiar fecha limite</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Cambiar descripci&oacute;n</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Eliminar reto</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    
+                                    <button title="ir al sitio del reto" class="btn bgm-gray btn-float waves-effect"><i class="zmdi zmdi-mail-send"></i></button>
+                                </div>
+
+                                <div class="card-body card-padding">
+                                    usando vectores, registar los datos de los choferes de la empresa(considere 5) que operan.el administrador de la empresa desea que un programa le permita registrar los datos para cada chofer...
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="card">
+                                <div class="card-header bgm-black m-b-20">
+                                    <h2>Ejercicio en Pascal Archivo<small>propuesto por <a>Miguel Angel Mota Campo</a></small></h2>
+                                    <ul class="actions actions-alt">
+                                        <li class="dropdown">
+                                            <a href="" data-toggle="dropdown">
+                                                <i class="zmdi zmdi-more-vert"></i>
+                                            </a>
+                                            
+                                            <ul class="dropdown-menu dropdown-menu-right">
+                                                <li>
+                                                    <a href="">Cambiar fecha limite</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Cambiar descripci&oacute;n</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Eliminar reto</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    
+                                    <button title="ir al sitio del reto" class="btn bgm-bluegray btn-float waves-effect"><i class="zmdi zmdi-mail-send"></i></button>
+                                </div>
+
+                                <div class="card-body card-padding">
+                                    Hola Amigos que tal como les va. Si pudiesen ayudarme al mismo tiempo que entran en desafio con este ejercicio de programaci&oacute;n que me ha sacado mas de un syntax error y una que otra cana en el viejo pascal!    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="card">
+                                <div class="card-header bgm-green m-b-20">
+                                    <h2>Completar algoritmo-java eclipse<small>propuesto por <a>Luis TC</a></small></h2>
+                                    <ul class="actions actions-alt">
+                                        <li class="dropdown">
+                                            <a href="" data-toggle="dropdown">
+                                                <i class="zmdi zmdi-more-vert"></i>
+                                            </a>
+                                            
+                                            <ul class="dropdown-menu dropdown-menu-right">
+                                                <li>
+                                                    <a href="">Cambiar fecha limite</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Cambiar descripci&oacute;n</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Eliminar reto</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    
+                                    <button title="ir al sitio del reto" class="btn bgm-red btn-float waves-effect"><i class="zmdi zmdi-mail-send"></i></button>
+                                </div>
+
+                                <div class="card-body card-padding">
+                                    import java.util.Scanner;
+
+                                    public class Principal {
+                                    	static int cod[];
+                                    	static String nom[];
+                                    	static int n1[];
+                                    	static int n2[];
+                                    	static double prom[];
+                                    	static double nfinal1 = 0;
+                                    	static double nfinal2 = 0;
+                                    	static double acumn1 = 0, acumn2 = 0;
+                                    	static double prom1, maxnota = 0;
+                                    	static int pos = 0;.....
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+            </section>
+        </section>
+        
+        
+        
+        <footer id="footer">
+            Copyright &copy; 2016 Hunting Hackers
+            
+            <ul class="f-menu">
+                <li><a href="">Home</a></li>
+                <li><a href="">Dashboard</a></li>
+                <li><a href="">Reports</a></li>
+                <li><a href="">Support</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </footer>
+        
+        
+        <!-- Javascript Libraries -->
+        <script src="vendors/bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+       
+        <script src="vendors/bower_components/jquery.nicescroll/jquery.nicescroll.min.js"></script>
+        <script src="vendors/bower_components/Waves/dist/waves.min.js"></script>
+        <script src="vendors/bootstrap-growl/bootstrap-growl.min.js"></script>
+        <script src="vendors/bower_components/bootstrap-sweetalert/lib/sweet-alert.min.js"></script>
+        
+        <!-- Placeholder for IE9 -->
+        <!--[if IE 9 ]>
+            <script src="vendors/bower_components/jquery-placeholder/jquery.placeholder.min.js"></script>
+        <![endif]-->
+        
+        <script src="js/functions.js"></script>
+        <script src="js/demo.js"></script>
+    </body>
+  </html>

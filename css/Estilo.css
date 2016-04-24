@@ -1,0 +1,284 @@
+*{margin: 0; padding: 0;}
+
+body{
+    background: #fffffa;
+}
+
+header{
+    width: 100%;
+    overflow: hidden;
+    background: #034B7E;
+    margin-bottom: 20px;
+}
+
+footer{
+    position: relative;
+    margin-top: auto; /* valor engativo del alto del footer */
+    height: 50px;
+    clear:both;
+    background-color: #034B7E;
+}
+
+
+/* CLEAR FIX*/
+.clearfix:after {content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;}
+.clearfix {display: inline-block;}
+/* Hides from IE-mac \*/
+* html .clearfix { height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+
+nav ul{
+    list-style: none;
+}
+
+nav > ul{
+    display: inline-block;
+    width: 100%;
+    background: #000;
+    position: relative;
+}
+
+nav > ul li{
+    display: table-cell;
+}
+
+/*Sub-menu*/
+
+nav > ul > li:hover > ul{
+    display: block;
+    height: 100%;
+}
+
+nav > ul > li > ul{
+    display: block;
+    position: absolute;
+    background: #000;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    height: 0%;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+nav > ul li a{
+    color: #fff;
+    display: block;
+    line-height: normal;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+nav > ul > li > ul > li a:hover{
+    background: #5da5a2;
+}
+
+nav > ul > li a span{
+    background: #034B7E;
+    display: block;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    top: -100px;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+nav > ul > li a span .icon{
+    display: block;
+    line-height: 60px;
+}
+
+nav > ul > li a:hover > span{
+    top: 0;
+}
+
+/*Colores Iconos*/
+
+nav ul li a .pri{
+    background: #19E9E9;
+} 
+
+nav ul li a .seg{
+    background: #EAF510;
+} 
+
+nav ul li a .ter{
+    background: #FFA600;
+} 
+
+nav ul li a .cua{
+    background: #09FF00;
+} 
+
+nav ul li a .qui{
+    background: #FF0000;
+} 
+
+.wrapper{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+header .Logo img{
+    float: left;
+    width: 30%;
+    position:absolute;
+    overflow: hidden;
+}
+
+header .Logo{
+    color: #f2f2f2;
+    font-size: 50px;
+    line-height: 200px;
+    float: left;
+}
+
+header nav{
+    float: right;
+    line-height: 200px;
+}
+
+header nav a{
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    line-height: normal;
+    font-size: 17px;
+    font-weight: bold;
+    -webkit-trasition: all 500ms ease ;
+    -o-transition: all 500ms ease ;
+    transition: all 500ms ease ;
+}
+
+header nav a:hover{
+    background: #f56f3a ;
+    border-radius: 50px;
+}
+
+.headeredit{
+    position: fixed;
+    height: 100px;
+}
+
+.headeredit .Logo{
+    line-height: 100px;
+    font-size: 30px;
+}
+
+.headeredit nav{
+    line-height: 100px;
+}
+
+.Contenido p{
+    margin-bottom: .5em;
+    font-size: 1.5em;
+}
+
+@media screen and (max-width: 950px) {
+    header .Logo,
+    header nav , 
+    nav > ul > li a span{
+        width: 100%;
+        text-align: center;
+        line-height: 100px;
+        top: -150px;
+    }
+    
+    .headeredit {
+        height: auto;
+    }
+    
+    .headeredit .Logo,
+    .headeredit nav {
+        float: left;
+        width: 30%;
+        position:absolute;
+        overflow: inherit;
+        line-height: 50px;
+    }
+}
+
+body {
+    background: #f2f2f2;
+}
+
+.main{
+    width: 90%;
+    max-width: 1000%;
+    margin:20px  auto;
+}
+
+.slides{
+    width: 100%;
+}
+
+.slides img{
+    width: 100%;
+}
+
+.slidesjs-pagination{
+    background: #424242;
+    list-style: none;
+    overflow: hidden;
+}
+
+.slidesjs-pagination li{
+    float: left;
+}
+
+.slidesjs-pagination li a{
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.slidesjs-pagination li a:hover{
+    background: #000;
+}
+
+.slides .active {
+    background: #000;
+}
+
+.slidesjs-navigation {
+    background: #000;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 20px;
+    float: right;
+
+}
+
+.Imagen
+{
+    background: url(Imag/1.jpg) no-repeat fixed center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
